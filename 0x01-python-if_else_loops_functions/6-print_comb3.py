@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-for n in range(1,90):
-    if n == 89:
-        print("{:02d}".format(n))
-    else:
-        print("{:02d}, ".format(n), end="")
+for n in range(0,9):
+    for i in range(n+1,10):
+        if n == 8:
+            print("{:d}{:d}".format(n,i))
+        else:
+            print("{:d}{:d}".format(n,i), end=", ")
