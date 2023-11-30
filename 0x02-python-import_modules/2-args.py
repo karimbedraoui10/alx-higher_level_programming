@@ -2,8 +2,7 @@
 if __name__ == "__main__":
     import sys
 
-    arg = sys.argv
-    size = len(arg) - 1
+    size = len(sys.argv) - 1
     if size == 0:
         print("0 arguments.")
     elif size == 1:
@@ -11,5 +10,5 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(size))
     for n in range(1, size + 1):
-        print("{}: {}".format(n, arg[n]))
+        print("{}: {}".format(n, sys.argv[n]))
 
